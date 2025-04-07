@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: linear-gradient(60deg, #5fa6e4 0%, #e366e7 50%, #d037f7 100%);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.timer .buttons .custom {
+  flex: content;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: url('your-background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.timer {
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.buttons {
+  margin: 10px 0;
+}
+
+.time-button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.timer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.display-time-left {
+  font-weight: 100;
+  font-size: 20rem;
+  margin: 0;
+  color: white;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+#timer {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+}

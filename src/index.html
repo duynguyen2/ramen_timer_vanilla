@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instant Ramen Timer</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="timer">
+    <h1>Instant Ramen Timer</h1>
+    
+    <div class="buttons">
+      <button data-time="180" class="time-button">3 Minutes</button>
+      <button data-time="240" class="time-button">4 Minutes</button>
+      <button data-time="300" class="time-button">5 Minutes</button>
+      <form name="custom-time" id="custom">
+        <input type="text" name="minutes" placeholder="Enter Custom Time (Minutes):  e.g., 6">
+      </form>
+    </div>
+
+    <h2>Time Remaining:</h2>
+    <div class="timer-display">
+      <h2 class="display-time-left"></h2>
+      <p class="display-end-time"></p>
+    </div>
+
+    <button id="start-stop-btn">Start</button>
+    <p id="completed-message" style="display: none;">Ramen is ready!</p>
+  </div>
+
+  <script src="timer.js"></script>
+</body>
+</html>
