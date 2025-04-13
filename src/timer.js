@@ -1,4 +1,3 @@
-let timer;
 let countdown;
 let timerRunning = false;
 let timeRemaining = 0;
@@ -44,7 +43,7 @@ function displayEndTime(timestamp) {
   const end = new Date(timestamp);
   const hour = end.getHours();
   const minutes = end.getMinutes();
-  endTime.textContent = `Ramen ready at ${hour > 12 ? hour - 12 : hour}:${minutes < 10 ? '0' : ''}`;
+  endTime.textContent = `Ramen ready at ${hour > 12 ? hour - 12 : hour}:${minutes < 10 ? '0' : ''}${minutes}`;
 }
 
 // Update the timer display
