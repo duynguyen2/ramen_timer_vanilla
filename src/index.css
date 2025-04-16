@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: linear-gradient(60deg, #5fa6e4 0%, #e366e7 50%, #d037f7 100%);
+  
 }
 
 *, *:before, *:after {
@@ -15,8 +15,8 @@ html {
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   background: url('your-background-image.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: white;
+  background: linear-gradient(60deg, #5fa6e4 0%, #e366e7 50%, #d037f7 100%);
+  background-image: url(/ramen_timer_vanilla/assets/instant-noodles.png), linear-gradient(60deg, #5fa6e4 0%, #e366e7 50%, #d037f7 100%);
   text-align: center;
 }
 

@@ -14,6 +14,7 @@ function timer(seconds) {
   clearInterval(countdown);
   const current = Date.now();
   const endingTime = current + seconds * 1000;
+  const audio = new Audio('/assets/ding-80828.mp3');
 
   displayRemainingTime(seconds);
   displayEndTime(endingTime);
@@ -24,6 +25,8 @@ function timer(seconds) {
     //chcek if timer runs out
     if(secondsRemaining < 0) {
       clearInterval(countdown);
+      timerDisplay.textContent = 'Ramen is ready!';
+      audio.play();
       return;
     }
 
