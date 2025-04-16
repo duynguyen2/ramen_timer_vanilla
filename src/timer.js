@@ -14,7 +14,6 @@ function timer(seconds) {
   clearInterval(countdown);
   const current = Date.now();
   const endingTime = current + seconds * 1000;
-  const audio = new Audio('/assets/ding-80828.mp3');
 
   displayRemainingTime(seconds);
   displayEndTime(endingTime);
@@ -26,7 +25,7 @@ function timer(seconds) {
     if(secondsRemaining < 0) {
       clearInterval(countdown);
       timerDisplay.textContent = 'Ramen is ready!';
-      audio.play();
+      playSound();
       return;
     }
 
@@ -58,6 +57,11 @@ function updateTimerDisplay() {
 function startTimer() {
   const seconds = parseInt(this.dataset.time);
   timer(seconds);
+}
+
+function playSound() {
+  const audio = new Audio('assets/ding-80828.mp3');
+  audio.play().catch(error => console.log("Audio play error: ", error));
 }
 
 timeButtons.forEach(button => button.addEventListener('click', startTimer));
